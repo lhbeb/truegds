@@ -5,7 +5,7 @@ export default function ReturnPolicyPage() {
         <h1 className="text-3xl font-bold text-gray-900 mb-6">Return Policy</h1>
         <div className="prose max-w-none text-gray-600">
           <p className="text-lg mb-6">
-            At HappyDeel, we want you to be completely satisfied with your purchase. If you&#39;re not entirely happy with your order, we&#39;re here to help.
+            At TrueGds, we want you to be completely satisfied with your purchase. If you&#39;re not entirely happy with your order, we&#39;re here to help.
           </p>
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Return Window</h2>
           <p>
@@ -45,7 +45,7 @@ export default function ReturnPolicyPage() {
           </p>
           <ul className="list-none mt-4">
             <li>Phone: +17176484487</li>
-            <li>Email: support@happydeel.com</li>
+            <li>Email: support@truegds.com</li>
             <li>Hours: Monday - Friday, 9:00 AM - 5:00 PM EST</li>
           </ul>
         </div>

@@ -11,29 +11,29 @@ import { Suspense } from "react";
 import VisitNotifier from "@/components/VisitNotifier";
 
 export const metadata: Metadata = {
-  title: "HappyDeel - Your Trusted Marketplace for Everything.",
-  description: "Shop millions of products at HappyDeel: electronics, fashion, home, collectibles, toys, beauty, gadgets, and more. Discover unbeatable deals, fast shipping, and a secure shopping experience—just like eBay, but happier!",
-  keywords: "HappyDeel, online marketplace, general store, electronics, fashion, home, collectibles, toys, beauty, gadgets, deals, shopping, eBay alternative, secure checkout, fast shipping",
-  authors: [{ name: "HappyDeel" }],
-  creator: "HappyDeel",
-  publisher: "HappyDeel",
+  title: "TrueGds - Your Trusted Marketplace for Everything.",
+  description: "Shop millions of products at TrueGds: electronics, fashion, home, collectibles, toys, beauty, gadgets, and more. Discover unbeatable deals, fast shipping, and a secure shopping experience—just like eBay, but happier!",
+  keywords: "TrueGds, online marketplace, general store, electronics, fashion, home, collectibles, toys, beauty, gadgets, deals, shopping, eBay alternative, secure checkout, fast shipping",
+  authors: [{ name: "TrueGds" }],
+  creator: "TrueGds",
+  publisher: "TrueGds",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://happydeel.com"),
+  metadataBase: new URL("https://truegds.com"),
   openGraph: {
-    title: "HappyDeel - Your Trusted Marketplace for Everything.",
-    description: "Shop millions of products at HappyDeel: electronics, fashion, home, collectibles, toys, beauty, gadgets, and more. Discover unbeatable deals, fast shipping, and a secure shopping experience—just like eBay, but happier!",
-    url: "https://happydeel.com",
-    siteName: "HappyDeel",
+    title: "TrueGds - Your Trusted Marketplace for Everything.",
+    description: "Shop millions of products at TrueGds: electronics, fashion, home, collectibles, toys, beauty, gadgets, and more. Discover unbeatable deals, fast shipping, and a secure shopping experience—just like eBay, but happier!",
+    url: "https://truegds.com",
+    siteName: "TrueGds",
     images: [
       {
         url: "/g7x.webp",
         width: 1200,
         height: 630,
-        alt: "HappyDeel - Online Marketplace for Everything",
+        alt: "TrueGds - Online Marketplace for Everything",
       },
     ],
     locale: "en_US",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "HappyDeel - Your Trusted Marketplace for Everything.",
-    description: "Shop millions of products at HappyDeel: electronics, fashion, home, collectibles, toys, beauty, gadgets, and more. Discover unbeatable deals, fast shipping, and a secure shopping experience—just like eBay, but happier!",
+    title: "TrueGds - Your Trusted Marketplace for Everything.",
+    description: "Shop millions of products at TrueGds: electronics, fashion, home, collectibles, toys, beauty, gadgets, and more. Discover unbeatable deals, fast shipping, and a secure shopping experience—just like eBay, but happier!",
     images: ["/g7x.webp"],
   },
   robots: {
@@ -82,19 +82,19 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "HappyDeel",
-              "url": "https://happydeel.com",
-              "logo": "https://happydeel.com/logosvg.svg",
-              "description": "HappyDeel - Where Savings Make You Smile. Discover premium cameras and photography equipment at unbeatable prices.",
+              "name": "TrueGds",
+              "url": "https://truegds.com",
+              "logo": "https://truegds.com/logosvg.svg",
+              "description": "TrueGds - Where Savings Make You Smile. Discover premium cameras and photography equipment at unbeatable prices.",
               "sameAs": [
-                "https://twitter.com/happydeel",
-                "https://facebook.com/happydeel",
-                "https://instagram.com/happydeel"
+                "https://twitter.com/truegds",
+                "https://facebook.com/truegds",
+                "https://instagram.com/truegds"
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "customer service",
-                "email": "support@happydeel.com"
+                "email": "support@truegds.com"
               },
               "address": {
                 "@type": "PostalAddress",
@@ -112,14 +112,14 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "HappyDeel",
-              "url": "https://happydeel.com",
-              "description": "HappyDeel - Where Savings Make You Smile. Discover premium cameras and photography equipment at unbeatable prices.",
+              "name": "TrueGds",
+              "url": "https://truegds.com",
+              "description": "TrueGds - Where Savings Make You Smile. Discover premium cameras and photography equipment at unbeatable prices.",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": {
                   "@type": "EntryPoint",
-                  "urlTemplate": "https://happydeel.com/api/products/search?q={search_term_string}"
+                  "urlTemplate": "https://truegds.com/api/products/search?q={search_term_string}"
                 },
                 "query-input": "required name=search_term_string"
               }

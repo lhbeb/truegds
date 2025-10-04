@@ -40,7 +40,7 @@ export default function CookieConsent() {
             <p className="text-sm sm:text-base leading-relaxed">
               By continuing to use this site, you accept our{' '}
               <a 
-                href="https://www.happydeel.com/cookies" 
+                href="https://www.truegds.com/cookies" 
                 className="underline hover:text-blue-200 font-medium transition-colors" target="_blank" rel="noopener noreferrer"
               >
                 Cookie Policy

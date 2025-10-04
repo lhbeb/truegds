@@ -12,7 +12,7 @@ const Footer = () => {
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <Image 
                 src="/logosvg.svg" 
-                alt="HappyDeel Logo" 
+                alt="TrueGds Logo" 
                 width={192}
                 height={40}
                 className="w-48 brightness-0 invert"
@@ -30,8 +30,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-[#0046be] mr-2" />
-                <a href="mailto:support@happydeel.com" className="hover:text-[#0046be] transition-colors duration-300">
-                  support@happydeel.com
+                <a href="mailto:support@truegds.com" className="hover:text-[#0046be] transition-colors duration-300">
+                  support@truegds.com
                 </a>
               </div>
               <div className="flex items-start">
@@ -40,7 +40,7 @@ const Footer = () => {
               </div>
               <div className="pt-2">
                 <a 
-                  href="https://www.instagram.com/happydeelcom" 
+                  href="https://www.instagram.com/truegdscom" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-gray-300 hover:text-[#0046be] transition-colors duration-300"
@@ -88,7 +88,7 @@ const Footer = () => {
                 className="h-16 w-auto max-w-full object-contain" 
               />
             </div>
-            <p className="text-center">© 2024 HappyDeel. All rights reserved.</p>
+            <p className="text-center">© 2024 TrueGds. All rights reserved.</p>
           </div>
         </div>
       </div>

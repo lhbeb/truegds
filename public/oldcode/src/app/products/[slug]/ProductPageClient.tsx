@@ -31,14 +31,14 @@ export default function ProductPageClient({ product: initialProduct }: ProductPa
 
   const faqItems = useMemo(() => [
     { question: "Are the items new or used?", answer: "We offer both new and second-hand items. Product condition is clearly listed in the description (e.g., Brand New, Like New, Refurbished, or Used – Good Condition)." },
-    { question: "Do products come with a warranty?", answer: "New items typically include a manufacturer warranty. For second-hand items, we offer a 30-day HappyDeel Guarantee for returns and exchanges, unless otherwise stated." },
+    { question: "Do products come with a warranty?", answer: "New items typically include a manufacturer warranty. For second-hand items, we offer a 30-day TrueGds Guarantee for returns and exchanges, unless otherwise stated." },
     { question: "Can I return a product if it doesn't meet my expectations?", answer: "Yes! We offer 30-day hassle-free returns. The item must be in the same condition as received. Read our Return Policy for more details." },
     { question: "How long does shipping take?", answer: "Most orders ship within 5–8 business days. Delivery times vary by location, but you can expect your item within 5–8 business days on average." },
     { question: "Is there free shipping?", answer: "Yes, we offer free standard shipping on all orders currently. Express options are also available at checkout." },
     { question: "Are your second-hand products tested?", answer: "Absolutely. All second-hand electronics go through a multi-point inspection and are fully functional unless otherwise stated." },
     { question: "Can I trust the product photos?", answer: "Yes — what you see is what you get. Our photos show the actual product (or a very close representation for new items). We do not use stock images for used items." },
     { question: "Is local pickup available?", answer: "Currently, we are an online-only store, but we're working on introducing local pickup options in select cities soon." },
-    { question: "How can I contact customer support?", answer: "You can reach us anytime at support@happydeel.com or call us at +17176484487. We're available 7 days a week." }
+    { question: "How can I contact customer support?", answer: "You can reach us anytime at support@truegds.com or call us at +17176484487. We're available 7 days a week." }
   ], []);
 
   // Generate urgency data on client side only

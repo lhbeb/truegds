@@ -6,7 +6,7 @@ const CookiesPage = () => (
       <h1 className="text-3xl font-bold text-gray-900 mb-6">Cookies Policy</h1>
       <div className="prose max-w-none text-gray-600">
         <p className="text-lg mb-6">
-          This Cookies Policy explains how HappyDeel uses cookies and similar tracking technologies on our website. By using our website, you consent to the use of cookies as described in this policy.
+          This Cookies Policy explains how TrueGds uses cookies and similar tracking technologies on our website. By using our website, you consent to the use of cookies as described in this policy.
         </p>
         <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">What Are Cookies?</h2>
         <p className="mb-6">
@@ -64,7 +64,7 @@ const CookiesPage = () => (
         </p>
         <ul className="list-none mt-4">
           <li>Phone: +17176484487</li>
-          <li>Email: support@happydeel.com</li>
+          <li>Email: support@truegds.com</li>
           <li>Hours: Monday - Friday, 9:00 AM - 5:00 PM EST</li>
         </ul>
         <div className="bg-blue-50 p-6 rounded-lg mt-8">

@@ -6,7 +6,7 @@ const TermsPage = () => (
       <h1 className="text-3xl font-bold text-gray-900 mb-6">Terms of Service</h1>
       <div className="prose max-w-none text-gray-600">
         <p className="text-lg mb-6">
-          Welcome to HappyDeel. By accessing or using our website, you agree to be bound by these Terms of Service.
+          Welcome to TrueGds. By accessing or using our website, you agree to be bound by these Terms of Service.
         </p>
         <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Account Terms</h2>
         <ul className="list-disc pl-6 mt-4 mb-6">
@@ -44,7 +44,7 @@ const TermsPage = () => (
         </ul>
         <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Limitation of Liability</h2>
         <p>
-          HappyDeel shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services.
+          TrueGds shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of our services.
         </p>
         <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Contact Information</h2>
         <p>
@@ -52,7 +52,7 @@ const TermsPage = () => (
         </p>
         <ul className="list-none mt-4">
           <li>Phone: +17176484487</li>
-          <li>Email: support@happydeel.com</li>
+          <li>Email: support@truegds.com</li>
           <li>Hours: Monday - Friday, 9:00 AM - 5:00 PM EST</li>
         </ul>
       </div>

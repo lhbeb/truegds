@@ -26,8 +26,8 @@ const InstagramSection: React.FC = () => {
                 
                 {/* Profile Details */}
                 <div className="flex-grow">
-                  <h3 className="font-bold text-gray-900 text-lg sm:text-xl mb-1">@happydeelcom</h3>
-                  <p className="text-gray-600 text-sm sm:text-base mb-2">HappyDeel</p>
+                  <h3 className="font-bold text-gray-900 text-lg sm:text-xl mb-1">@truegdscom</h3>
+                  <p className="text-gray-600 text-sm sm:text-base mb-2">TrueGds</p>
                   
                   {/* Statistics */}
                   <div className="flex items-center space-x-4 sm:space-x-6 text-sm">
@@ -50,7 +50,7 @@ const InstagramSection: React.FC = () => {
               {/* Follow Us Button */}
               <div className="flex-shrink-0">
                 <a
-                  href="https://www.instagram.com/happydeelcom"
+                  href="https://www.instagram.com/truegdscom"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md"

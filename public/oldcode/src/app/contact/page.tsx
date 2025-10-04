@@ -154,7 +154,7 @@ export default function ContactPage() {
                       <Mail className="h-6 w-6 text-[#0046be] mt-1" />
                       <div className="ml-4">
                         <h3 className="font-medium text-gray-900">Email</h3>
-                        <p className="text-gray-600 mt-1">support@happydeel.com</p>
+                        <p className="text-gray-600 mt-1">support@truegds.com</p>
                       </div>
                     </div>
                     <div className="border-t border-gray-200 pt-6">

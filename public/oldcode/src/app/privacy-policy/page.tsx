@@ -6,7 +6,7 @@ const PrivacyPolicyPage = () => (
       <h1 className="text-3xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
       <div className="prose max-w-none text-gray-600">
         <p className="text-lg mb-6">
-          At HappyDeel, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
+          At TrueGds, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
         </p>
         <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Information We Collect</h2>
         <p>We collect information that you provide directly to us when you:</p>
@@ -41,7 +41,7 @@ const PrivacyPolicyPage = () => (
         </p>
         <ul className="list-none mt-4">
           <li>Phone: +17176484487</li>
-          <li>Email: support@happydeel.com</li>
+          <li>Email: support@truegds.com</li>
           <li>Address: 315 Lancaster Avenue, Haverford, PA 19041, USA</li>
         </ul>
       </div>

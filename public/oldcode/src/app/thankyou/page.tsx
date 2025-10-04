@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { CheckCircle, Mail, Clock, Package, ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Thank You for Your Order | HappyDeel',
+  title: 'Thank You for Your Order | TrueGds',
   description: 'Your order has been successfully placed. We&apos;ll process it soon and send you tracking information via email.',
   robots: {
     index: false,
@@ -79,8 +79,8 @@ export default function ThankYouPage() {
             </p>
             <div className="space-y-1 text-sm">
               <p className="text-gray-700">
-                📧 <a href="mailto:support@happydeel.com" className="text-blue-600 hover:text-blue-700 font-medium">
-                  support@happydeel.com
+                📧 <a href="mailto:support@truegds.com" className="text-blue-600 hover:text-blue-700 font-medium">
+                  support@truegds.com
                 </a>
               </p>
               <p className="text-gray-700">

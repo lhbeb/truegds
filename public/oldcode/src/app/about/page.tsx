@@ -4,15 +4,15 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 py-12">
       <div className="container mx-auto px-4">
-        <h1 className="text-3xl font-bold text-gray-900 mb-6">About HappyDeel</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-6">About TrueGds</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="prose max-w-none text-gray-600">
             <p className="text-lg mb-6">
-              Welcome to HappyDeel, your premier destination for quality electronics and photography equipment. Since our establishment, we&#39;ve been dedicated to providing photographers and tech enthusiasts with exceptional products at competitive prices.
+              Welcome to TrueGds, your premier destination for quality electronics and photography equipment. Since our establishment, we&#39;ve been dedicated to providing photographers and tech enthusiasts with exceptional products at competitive prices.
             </p>
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Our Mission</h2>
             <p className="mb-6">
-              At HappyDeel, we believe that everyone deserves access to high-quality photography equipment. Our mission is to make premium cameras and accessories accessible to both professionals and enthusiasts while providing unmatched customer service.
+              At TrueGds, we believe that everyone deserves access to high-quality photography equipment. Our mission is to make premium cameras and accessories accessible to both professionals and enthusiasts while providing unmatched customer service.
             </p>
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">What Sets Us Apart</h2>
             <ul className="list-disc pl-6 space-y-3 mb-6">
@@ -65,7 +65,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <div className="font-medium text-gray-900">Email:</div>
-                  <div className="text-gray-600">support@happydeel.com</div>
+                  <div className="text-gray-600">support@truegds.com</div>
                 </div>
                 <div>
                   <div className="font-medium text-gray-900">Business Hours:</div>

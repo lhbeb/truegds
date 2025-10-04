@@ -5,7 +5,7 @@ export default function ShippingPolicyPage() {
         <h1 className="text-3xl font-bold text-gray-900 mb-6">Shipping Policy</h1>
         <div className="prose max-w-none text-gray-600">
           <p className="text-lg mb-6">
-            At HappyDeel, we strive to provide fast, reliable shipping services to all our customers. Here&#39;s everything you need to know about our shipping policy.
+            At TrueGds, we strive to provide fast, reliable shipping services to all our customers. Here&#39;s everything you need to know about our shipping policy.
           </p>
           <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Free Shipping</h2>
           <ul className="list-disc pl-6 mt-4 mb-6">
@@ -75,7 +75,7 @@ export default function ShippingPolicyPage() {
           </p>
           <ul className="list-none mt-4">
             <li>Phone: +17176484487</li>
-            <li>Email: support@happydeel.com</li>
+            <li>Email: support@truegds.com</li>
             <li>Hours: Monday - Friday, 9:00 AM - 5:00 PM EST</li>
           </ul>
           <div className="bg-blue-50 p-6 rounded-lg mt-8">

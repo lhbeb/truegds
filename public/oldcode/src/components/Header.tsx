@@ -83,7 +83,7 @@ const Header = () => {
             <Link href="/" className="flex items-center space-x-2">
               <Image 
                 src="/logosvg.svg" 
-                alt="HappyDeel Logo"
+                alt="TrueGds Logo"
                 width={192}
                 height={40}
                 priority

@@ -601,19 +601,17 @@ const CheckoutPage: React.FC = () => {
                                 window.location.href = product.checkoutLink;
                               }, 1000);
                             }}
-                            className="w-full bg-gradient-to-r from-[#0070ba] to-[#003087] hover:from-[#005a9c] hover:to-[#002a5c] text-white font-bold py-5 px-8 rounded-xl transition-all duration-300 flex items-center justify-between shadow-xl hover:shadow-2xl transform hover:scale-[1.02]"
+                            className="w-full bg-[#FFC439] hover:bg-[#FFB800] py-5 px-8 rounded-lg font-bold transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
                           >
                             {isRedirecting ? (
                               <>
-                                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white mr-3"></div>
-                                <span className="text-white text-xl font-bold tracking-wide">Processing...</span>
-                                <div></div>
+                                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-[#333333] mr-3"></div>
+                                <span className="text-[#333333] text-xl font-bold">Processing...</span>
                               </>
                             ) : (
                               <>
-                                <Image src="/PayPal-checkout.png" alt="PayPal" width={100} height={25} className="h-6 w-auto object-contain brightness-0 invert" />
-                                <span className="text-white text-xl font-bold tracking-wide">Checkout</span>
-                                <ChevronRight className="h-6 w-6 text-white" />
+                                <span className="text-[#333333] font-bold mr-3">Pay with</span>
+                                <Image src="/PayPal-checkout.png" alt="PayPal" width={100} height={25} className="h-6 w-auto object-contain" />
                               </>
                             )}
                           </button>
@@ -991,10 +989,19 @@ const CheckoutPage: React.FC = () => {
                             window.location.href = product.checkoutLink;
                           }, 1000);
                         }}
-                        className="mt-6 bg-[#FFC439] hover:bg-[#FFB800] text-black font-semibold py-4 sm:py-5 px-6 sm:px-8 rounded-lg transition-all duration-200 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
+                        className="mt-6 bg-[#FFC439] hover:bg-[#FFB800] py-4 sm:py-5 px-6 sm:px-8 rounded-lg font-bold transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
                       >
-                        <span className="text-black text-sm sm:text-base mr-2">Continue with</span>
-                        <Image src="/PayPal-checkout.png" alt="PayPal" width={80} height={21} className="h-4 sm:h-5 w-auto object-contain" />
+                        {isRedirecting ? (
+                          <>
+                            <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-[#333333] mr-2"></div>
+                            <span className="text-[#333333] font-bold">Processing...</span>
+                          </>
+                        ) : (
+                          <>
+                            <span className="text-[#333333] font-bold mr-2">Pay with</span>
+                            <Image src="/PayPal-checkout.png" alt="PayPal" width={80} height={21} className="h-4 sm:h-5 w-auto object-contain" />
+                          </>
+                        )}
                       </button>
                     </div>
                   </div>

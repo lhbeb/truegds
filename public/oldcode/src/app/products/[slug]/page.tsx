@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import ProductPageClient from './ProductPageClient';
 import type { Metadata, ResolvingMetadata } from 'next';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://happydeel.com';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://truegds.com';
 
 // @ts-expect-error Next.js app directory dynamic page/metadata functions do not support typing the params argument yet
 export async function generateMetadata({ params }, parent: ResolvingMetadata): Promise<Metadata> {
@@ -11,11 +11,11 @@ export async function generateMetadata({ params }, parent: ResolvingMetadata): P
 
   if (!product) {
     return {
-      title: 'Product Not Found | HappyDeel',
+      title: 'Product Not Found | TrueGds',
     };
   }
 
-  const title = `${product.title} - ${product.brand} | ${product.category} | HappyDeel`;
+  const title = `${product.title} - ${product.brand} | ${product.category} | TrueGds`;
   const description = product.description.substring(0, 155) + '...';
   const canonicalUrl = `${BASE_URL}/products/${product.slug}`;
 
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }, parent: ResolvingMetadata): P
       title,
       description,
       url: canonicalUrl,
-      siteName: 'HappyDeel',
+      siteName: 'TrueGds',
       images: product.images.map(img => ({ url: new URL(img, BASE_URL).toString() })),
       type: 'website',
     },
