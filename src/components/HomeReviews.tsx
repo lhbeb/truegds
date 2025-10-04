@@ -28,6 +28,7 @@ const HomeReviews: React.FC<HomeReviewsProps> = ({
 }) => {
   const [showReviewForm, setShowReviewForm] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     rating: 5,
@@ -56,14 +57,38 @@ const HomeReviews: React.FC<HomeReviewsProps> = ({
     setLiked(l => ({ ...l, [id]: true }));
   };
 
-  const handleSubmitReview = (e: React.FormEvent) => {
+  const handleSubmitReview = async (e: React.FormEvent) => {
     e.preventDefault();
-    setShowReviewForm(false);
-    setShowSuccess(true);
-    setFormData({ name: '', rating: 5, title: '', content: '' });
-    setTimeout(() => {
-      setShowSuccess(false);
-    }, 3000);
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('/api/submit-review', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setShowReviewForm(false);
+        setShowSuccess(true);
+        setFormData({ name: '', rating: 5, title: '', content: '' });
+        setTimeout(() => {
+          setShowSuccess(false);
+        }, 3000);
+      } else {
+        console.error('Failed to submit review:', result.error);
+        alert('Failed to submit review. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting review:', error);
+      alert('Failed to submit review. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const formatDate = (dateString: string) => {
@@ -303,15 +328,25 @@ const HomeReviews: React.FC<HomeReviewsProps> = ({
                   <button
                     type="button"
                     onClick={() => setShowReviewForm(false)}
-                    className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-200"
+                    disabled={isSubmitting}
+                    className={`flex-1 px-4 py-2 border border-gray-300 rounded-lg transition-colors duration-200 ${
+                      isSubmitting 
+                        ? 'text-gray-400 cursor-not-allowed' 
+                        : 'text-gray-700 hover:bg-gray-50'
+                    }`}
                   >
                     Cancel
                   </button>
                   <button
                     type="submit"
-                    className="flex-1 bg-[#0046be] hover:bg-[#003494] text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200"
+                    disabled={isSubmitting}
+                    className={`flex-1 px-4 py-2 rounded-lg font-medium transition-colors duration-200 ${
+                      isSubmitting 
+                        ? 'bg-gray-400 cursor-not-allowed text-white' 
+                        : 'bg-[#0046be] hover:bg-[#003494] text-white'
+                    }`}
                   >
-                    Submit Review
+                    {isSubmitting ? 'Submitting...' : 'Submit Review'}
                   </button>
                 </div>
               </form>
