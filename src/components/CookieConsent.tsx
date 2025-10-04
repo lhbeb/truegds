@@ -1,74 +1,75 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { X, Check } from 'lucide-react';
+import { X, Cookie } from 'lucide-react';
 
-export default function CookieConsent() {
+const CookieConsent: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Check if user has already accepted cookies in this session
-    const hasAccepted = sessionStorage.getItem('cookiesAccepted');
-    if (!hasAccepted) {
-      // Show the cookie bar after a short delay
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 1000);
-      return () => clearTimeout(timer);
+    // Check if user has already made a choice
+    const consent = localStorage.getItem('cookieConsent');
+    if (!consent) {
+      setIsVisible(true);
     }
   }, []);
 
   const handleAccept = () => {
-    sessionStorage.setItem('cookiesAccepted', 'true');
+    localStorage.setItem('cookieConsent', 'accepted');
     setIsVisible(false);
   };
 
   const handleDecline = () => {
-    sessionStorage.setItem('cookiesAccepted', 'false');
+    localStorage.setItem('cookieConsent', 'declined');
+    setIsVisible(false);
+  };
+
+  const handleClose = () => {
     setIsVisible(false);
   };
 
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 text-white shadow-2xl border-t border-gray-600" style={{backgroundColor: '#2f3d48'}}>
-      <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          {/* Content */}
-          <div className="flex-1 text-center sm:text-left">
-            <p className="text-sm sm:text-base leading-relaxed">
-              By continuing to use this site, you accept our{' '}
-              <a 
-                href="https://www.truegds.com/cookies" 
-                className="underline hover:text-gray-200 font-medium transition-colors" target="_blank" rel="noopener noreferrer"
-              >
-                Cookie Policy
-              </a>
-              . We use cookies to enhance your browsing experience and analyze site traffic.
+    <div className="fixed bottom-0 left-0 right-0 z-50" style={{backgroundColor: '#2f3d48'}}>
+      <div className="px-4 py-4 flex justify-center">
+        <div className="flex items-center space-x-6">
+          {/* Text */}
+          <div className="flex items-center space-x-2">
+            <Cookie className="h-5 w-5 text-gray-200" />
+            <p className="text-gray-200 text-sm">
+              We use cookies to enhance your experience. 
+              <Link href="/cookies" className="underline ml-1">Learn more</Link>
             </p>
           </div>
-
-          {/* Action Buttons */}
-          <div className="flex items-center gap-3 flex-shrink-0">
+          
+          {/* Buttons */}
+          <div className="flex items-center space-x-4">
             <button
               onClick={handleDecline}
-              className="px-4 py-2 text-sm font-medium text-gray-200 hover:text-white transition-colors flex items-center gap-2"
+              className="px-6 py-2 text-gray-200 border border-gray-500 rounded-md hover:bg-gray-600 transition-colors text-sm font-medium"
             >
-              <X className="w-4 h-4" />
               Decline
             </button>
-            
             <button
               onClick={handleAccept}
-              className="px-6 py-3 bg-white hover:bg-gray-50 font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl flex items-center gap-2 min-w-[120px] justify-center" style={{color: '#2f3d48'}}
+              className="px-6 py-2 bg-white text-[#2f3d48] rounded-md hover:bg-gray-50 transition-colors text-sm font-medium"
             >
-              <Check className="w-4 h-4" />
-              Accept
+              Accept All Cookies
+            </button>
+            <button
+              onClick={handleClose}
+              className="text-gray-200 hover:text-white transition-colors p-2"
+              aria-label="Close cookie consent"
+            >
+              <X className="h-5 w-5" />
             </button>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default CookieConsent;

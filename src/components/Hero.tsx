@@ -79,7 +79,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative bg-gradient-to-r from-[#003494] to-[#0046be] overflow-hidden">
+    <div className="relative bg-gradient-to-r from-[#2f3d48] to-[#1a252e] overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 transform -skew-y-6 bg-white"></div>
         <div className="absolute bottom-0 right-0 transform translate-x-1/4 translate-y-1/4">
@@ -93,15 +93,14 @@ const Hero = () => {
       <div className="container mx-auto px-4 py-16 md:py-24 relative z-10">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
-            <div className="mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
               <span 
                 ref={typingTextRef}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight inline-block min-h-[1.2em]"
+                className="inline-block min-h-[1.2em]"
               >
                 TrueGoods
               </span>
-            </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+              <br />
               Your Marketplace for Trusted Goods
             </h1>
             <p className="mt-4 text-lg md:text-xl text-blue-100 max-w-lg mx-auto md:mx-0">
@@ -110,14 +109,14 @@ const Hero = () => {
             <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <a 
                 href="#products" 
-                className="px-8 py-3 bg-white text-[#0046be] font-medium rounded-lg shadow-md hover:bg-blue-50 transition duration-300 flex items-center justify-center"
+                className="px-8 py-3 bg-[#0046be] text-white font-medium rounded-md shadow-md hover:bg-[#003494] transition duration-300 flex items-center justify-center border-2 border-transparent"
               >
                 Shop Now
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
               <a 
                 href="#featured" 
-                className="px-8 py-3 bg-transparent border-2 border-white text-white font-medium rounded-lg hover:bg-white hover:bg-opacity-10 transition duration-300 flex items-center justify-center"
+                className="px-8 py-3 bg-transparent border-2 border-white text-white font-medium rounded-md hover:bg-white hover:bg-opacity-10 transition duration-300 flex items-center justify-center"
               >
                 Featured Products
               </a>
@@ -125,14 +124,14 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 relative">
             <div className="relative mx-auto w-full max-w-md">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#003494] to-[#0046be] rounded-2xl transform rotate-3 scale-105 opacity-50 blur-xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#2f3d48] to-[#1a252e] rounded-2xl transform rotate-3 scale-105 opacity-50 blur-xl"></div>
               <Image 
-                src="/g7x.webp" 
-                alt="Canon G7X Camera" 
+                src="/pround.png" 
+                alt="Canon G7X Camera with accessories" 
                 width={500}
                 height={400}
                 priority
-                className="relative z-10 rounded-2xl shadow-2xl w-full h-auto object-cover object-center"
+                className="relative z-10 rounded-xl shadow-2xl w-full h-auto object-cover object-center"
               />
               <div className="absolute -bottom-4 -right-4 bg-white rounded-lg shadow-lg p-4 z-20">
                 <div className="flex items-center">

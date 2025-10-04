@@ -83,9 +83,9 @@ const Footer = () => {
               <Image 
                 src="/secure-checkout.png" 
                 alt="Secure Checkout" 
-                width={200}
-                height={32}
-                className="h-8 w-auto max-w-full object-contain" 
+                width={260}
+                height={42}
+                className="h-10 w-auto max-w-full object-contain" 
               />
             </div>
             <p className="text-center">© 2024 Truegds. All rights reserved.</p>

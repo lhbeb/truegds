@@ -1,0 +1,77 @@
+{
+  "title": "Oura Ring Gen 4 Size 7 Gold",
+  "description": "Pre-owned Oura Ring Gen 4 in elegant Gold, size 7. Tracks activity, sleep, and health metrics with precision. Fully functional and lightly used. Comes with charger and ready to pair with the Oura app. See images for condition.",
+  "price": 160.00,
+  "rating": 4.5,
+  "reviewCount": 12,
+  "inStock": true,
+  "slug": "oura-ring-gen4-size7-gold",
+  "id": "oura-ring-gen4-size7-gold",
+  "images": [
+    "/products/oura-ring-gen4-size7-gold/img1.webp",
+    "/products/oura-ring-gen4-size7-gold/img2.webp",
+    "/products/oura-ring-gen4-size7-gold/img3.webp",
+    "/products/oura-ring-gen4-size7-gold/img4.webp",
+    "/products/oura-ring-gen4-size7-gold/img5.webp"
+  ],
+  "condition": "Used",
+  "category": "Smart Rings",
+  "brand": "Oura",
+  "payeeEmail": "happyemilliano@gmail.com",
+  "currency": "USD",
+  "checkoutLink": "https://buymeacoffee.com/byerschristopherallen/extras/checkout/9fb4ebb3-549c-4464-9db2-7715db11f9c7",
+  "meta": {
+    "title": "Oura Ring Gen 4 Size 7 Gold",
+    "description": "Pre-owned Oura Ring Gen 4 in elegant Gold, size 7. Tracks activity, sleep, and health metrics with precision. Fully functional and lightly used. Comes with charger and ready to pair with the Oura app. See images for condition.",
+    "keywords": "Oura Ring, Gen 4, gold, size 7, smart ring, health tracker, sleep tracker, wearable tech, used Oura Ring"
+  },
+  "reviews": [
+    {
+      "id": "review-1",
+      "author": "Ashley Johnson",
+      "avatar": "https://i.ibb.co/whhmMqhv/2219349473-huge.jpg",
+      "rating": 5,
+      "date": "2025-06-01",
+      "title": "Sleep tracking is actually fun now",
+      "content": "I was skeptical about wearing a ring to bed, but the Oura Ring is so light I forget it's on. The sleep insights are wild—turns out my '8 hours' was more like 6.5 of real sleep. The gold finish is gorgeous and matches my other jewelry. Battery lasts me 5 days, and the charger is super compact. I even wore it to a wedding and tracked my steps on the dance floor. Highly recommend if you want to geek out on your health data.",
+      "helpful": 19,
+      "verified": true,
+      "location": "Portland, OR",
+      "purchaseDate": "March 2024",
+      "images": [
+        "https://i.ibb.co/RGYHKDMg/s-l1600-22.webp",
+        "https://i.ibb.co/WW8DJ95q/s-l1600-23.webp"
+      ]
+    },
+    {
+      "id": "review-2",
+      "author": "Jamal Washington",
+      "avatar": "https://i.ibb.co/4w8W5qG8/icon-7797704-640.png",
+      "rating": 4,
+      "date": "2025-05-05",
+      "title": "Accurate, but wish it had more fitness features",
+      "content": "I got this Oura Ring to help me track my recovery after marathon training. The readiness score is spot on—when it says take it easy, I usually feel it too. I do wish it had a heart rate display in real time, but the app is super detailed. The gold color is subtle, not flashy. Only downside: I sometimes forget to charge it and then miss a night of data. Still, it's the best sleep tracker I've tried.",
+      "helpful": 13,
+      "verified": true,
+      "location": "Denver, CO",
+      "purchaseDate": "February 2024",
+      "images": [
+        "https://i.ibb.co/G4ScnK51/s-l1600-24.webp"
+      ]
+    },
+    {
+      "id": "review-3",
+      "author": "Brianna Smith",
+      "avatar": "https://i.ibb.co/4w8W5qG8/icon-7797704-640.png",
+      "rating": 5,
+      "date": "2025-04-18",
+      "title": "Helped me spot a fever before I felt sick",
+      "content": "Honestly, I bought the Oura Ring for the sleep tracking, but the body temperature alerts are what blew me away. It flagged a temperature spike before I even felt symptoms—turns out I was coming down with a cold. The ring is comfortable, even for small hands (size 7 fits perfectly). I love checking my sleep stages in the morning. Only wish: I could swim with it, but I just take it off for the pool.",
+      "helpful": 15,
+      "verified": true,
+      "location": "Madison, WI",
+      "purchaseDate": "March 2024",
+      "images": []
+    }
+  ]
+}

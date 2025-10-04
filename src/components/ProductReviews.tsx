@@ -208,7 +208,7 @@ const ProductReviews: React.FC<ProductReviewsProps> = ({
                   alt={review.author}
                   width={48}
                   height={48}
-                  className="w-12 h-12 rounded-full object-cover flex-shrink-0"
+                  className="w-12 h-12 rounded-lg object-cover flex-shrink-0"
                 />
                 <div className="flex-grow">
                   <div className="flex items-start justify-between mb-2">

@@ -132,9 +132,9 @@ export default function ProductPageClient({ product: initialProduct }: ProductPa
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover rounded-lg"
+                  className="object-cover rounded-md"
                 />
-                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-200 rounded-lg flex items-center justify-center">
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-200 rounded-md flex items-center justify-center">
                   <ZoomIn className="h-12 w-12 text-white opacity-0 group-hover:opacity-75 transition-opacity" />
                 </div>
               </div>
@@ -143,7 +143,7 @@ export default function ProductPageClient({ product: initialProduct }: ProductPa
                   <button
                     key={idx}
                     onClick={() => setActiveImage(idx)}
-                    className={`relative flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden ${activeImage === idx ? 'ring-2 ring-[#0046be]' : 'ring-1 ring-gray-200'}`}
+                    className={`relative flex-shrink-0 w-20 h-20 rounded-md overflow-hidden ${activeImage === idx ? 'ring-2 ring-[#0046be]' : 'ring-1 ring-gray-200'}`}
                   >
                     <Image src={image} alt={`${title} thumbnail ${idx + 1}`} fill sizes="80px" className="object-cover" />
                     {activeImage === idx && <div className="absolute inset-0 bg-white/10"></div>}

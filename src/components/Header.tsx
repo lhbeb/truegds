@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { ShoppingCart, Menu, X, Search } from 'lucide-react';
+import { ShoppingCart, Menu, X, Search, ChevronLeft, ChevronRight } from 'lucide-react';
 import { getCartCount } from '@/utils/cart';
 import type { Product } from '@/types/product';
 import ClientOnly from './ClientOnly';
@@ -15,9 +15,54 @@ const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
   const [isSticky, setIsSticky] = useState(false);
+  const [currentAnnouncement, setCurrentAnnouncement] = useState(0);
   const router = useRouter();
   const searchParams = useSearchParams();
   const headerRef = useRef<HTMLElement>(null);
+  const announcementIntervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  const announcements = [
+    "🚚 Free Shipping for US & Canada Customers",
+    "📦 Free Returns Within 30 days"
+  ];
+
+  // Announcement bar animation
+  useEffect(() => {
+    const startAnnouncementRotation = () => {
+      announcementIntervalRef.current = setInterval(() => {
+        setCurrentAnnouncement(prev => (prev + 1) % announcements.length);
+      }, 2000);
+    };
+
+    startAnnouncementRotation();
+    
+    return () => {
+      if (announcementIntervalRef.current) {
+        clearInterval(announcementIntervalRef.current);
+      }
+    };
+  }, [announcements.length]);
+
+  const handleAnnouncementNavigation = (direction: 'prev' | 'next') => {
+    if (announcementIntervalRef.current) {
+      clearInterval(announcementIntervalRef.current);
+    }
+    
+    setCurrentAnnouncement(prev => {
+      if (direction === 'prev') {
+        return prev === 0 ? announcements.length - 1 : prev - 1;
+      } else {
+        return (prev + 1) % announcements.length;
+      }
+    });
+
+    // Restart auto-rotation after manual navigation
+    setTimeout(() => {
+      announcementIntervalRef.current = setInterval(() => {
+        setCurrentAnnouncement(prev => (prev + 1) % announcements.length);
+      }, 2000);
+    }, 100);
+  };
 
   useEffect(() => {
     const updateCartCount = () => {
@@ -62,10 +107,32 @@ const Header = () => {
   };
   return (
     <>
-      {/* Promotional bar - not sticky */}
-      <div className="bg-[#ffef02] text-[#313a4b] py-2">
-        <div className="container mx-auto px-4 text-center font-medium">
-          Free Shipping for US & Canada Customers
+      {/* Announcement bar - not sticky */}
+      <div className="bg-gradient-to-r from-[#0145bd] via-[#1a5bc7] to-[#3580ed] text-white py-2 relative overflow-hidden">
+        <div className="container mx-auto px-4 flex items-center justify-center relative">
+          {/* Announcement Text */}
+          <div className="text-center font-medium px-4 sm:px-16 transition-all duration-500 ease-in-out">
+            <span key={currentAnnouncement} className="inline-block animate-fade-in whitespace-nowrap text-sm sm:text-base">
+              {announcements[currentAnnouncement]}
+            </span>
+          </div>
+          
+          {/* Desktop Arrows Only */}
+          <button
+            onClick={() => handleAnnouncementNavigation('prev')}
+            className="hidden sm:block absolute left-1/2 transform -translate-x-56 p-1 hover:bg-white/20 rounded-full transition-colors duration-200 z-10"
+            aria-label="Previous announcement"
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+          
+          <button
+            onClick={() => handleAnnouncementNavigation('next')}
+            className="hidden sm:block absolute left-1/2 transform translate-x-52 p-1 hover:bg-white/20 rounded-full transition-colors duration-200 z-10"
+            aria-label="Next announcement"
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
         </div>
       </div>
       
