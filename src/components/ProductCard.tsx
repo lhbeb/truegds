@@ -14,14 +14,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { slug, title, price, images, condition } = product;
 
   return (
-    <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col">
+    <div className="bg-white rounded-md shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col">
       <Link href={`/products/${slug}`} className="block">
         <div className="relative w-full h-48">
           <Image
             src={images[0]}
             alt={title}
             fill
-            className="object-cover rounded-t-lg"
+            className="object-cover rounded-t-md"
             sizes="(max-width: 768px) 50vw, 33vw"
           />
         </div>

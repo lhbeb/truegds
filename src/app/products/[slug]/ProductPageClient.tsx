@@ -185,8 +185,22 @@ export default function ProductPageClient({ product: initialProduct }: ProductPa
                 <button onClick={handleAddToCart} disabled={isAddingToCart || isBuyingNow} className="w-full bg-[#0046be] hover:bg-[#003494] text-white py-4 px-6 rounded-xl font-semibold transition-colors duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed">
                   {isAddingToCart ? <><div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>Adding to Cart...</> : <><ShoppingCart className="h-5 w-5 mr-2" />Add to Cart</>}
                 </button>
-                <button onClick={handleBuyNow} disabled={isAddingToCart || isBuyingNow} className="w-full bg-white border-2 border-[#0046be] text-[#0046be] hover:bg-blue-50 hover:border-[#003494] hover:text-[#003494] py-4 px-6 rounded-xl font-semibold transition-colors duration-200 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed">
-                  {isBuyingNow ? <><div className="animate-spin rounded-full h-5 w-5 border-b-2 border-[#0046be] mr-2"></div>Processing...</> : <><Zap className="h-5 w-5 mr-2" />Buy Now</>}
+                <button 
+                  onClick={handleBuyNow} 
+                  disabled={isAddingToCart || isBuyingNow} 
+                  className="w-full bg-[#FFC439] hover:bg-[#FFB800] py-4 px-6 rounded-lg font-bold transition-all duration-300 flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transform hover:scale-[1.02]"
+                >
+                  {isBuyingNow ? (
+                    <>
+                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-[#333333] mr-2"></div>
+                      <span className="text-[#333333] font-bold">Processing...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span className="text-[#333333] font-bold mr-2">Pay with</span>
+                      <Image src="/PayPal-checkout.png" alt="PayPal" width={80} height={21} className="h-5 w-auto object-contain" />
+                    </>
+                  )}
                 </button>
               </div>
 

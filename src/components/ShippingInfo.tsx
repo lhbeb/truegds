@@ -24,9 +24,9 @@ const ShippingInfo: React.FC<ShippingInfoProps> = ({ className = '' }) => {
   return (
     <div className={`grid grid-cols-2 gap-4 ${className}`}>
       {/* Shipping Destination */}
-      <div className="p-4 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100 hover:border-blue-200 transition-all duration-300 hover:shadow-md">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-sm">
         <div className="flex items-center mb-2">
-          <div className="flex items-center justify-center w-8 h-8 bg-[#0046be] rounded-lg mr-2 flex-shrink-0">
+          <div className="flex items-center justify-center w-8 h-8 bg-gray-600 rounded-md mr-2 flex-shrink-0">
             <MapPin className="h-4 w-4 text-white" />
           </div>
           <p className="text-sm font-semibold text-gray-900">Shipping:</p>
@@ -38,9 +38,9 @@ const ShippingInfo: React.FC<ShippingInfoProps> = ({ className = '' }) => {
         </div>
       </div>
       {/* Delivery Time */}
-      <div className="p-4 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border border-green-100 hover:border-green-200 transition-all duration-300 hover:shadow-md">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-sm">
         <div className="flex items-center mb-2">
-          <div className="flex items-center justify-center w-8 h-8 bg-green-600 rounded-lg mr-2 flex-shrink-0">
+          <div className="flex items-center justify-center w-8 h-8 bg-gray-600 rounded-md mr-2 flex-shrink-0">
             <Truck className="h-4 w-4 text-white" />
           </div>
           <p className="text-sm font-semibold text-gray-900">Estimated delivery:</p>
@@ -51,9 +51,9 @@ const ShippingInfo: React.FC<ShippingInfoProps> = ({ className = '' }) => {
         </div>
       </div>
       {/* Stock / Low Stock Card */}
-      <div className="p-4 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl border border-yellow-100 hover:border-yellow-200 transition-all duration-300 hover:shadow-md">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-sm">
         <div className="flex items-center mb-2">
-          <div className="flex items-center justify-center w-8 h-8 bg-yellow-600 rounded-lg mr-2 flex-shrink-0">
+          <div className="flex items-center justify-center w-8 h-8 bg-gray-600 rounded-md mr-2 flex-shrink-0">
             {/* Stock icon (box) */}
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="4" y="7" width="16" height="13" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/><path d="M2 7l10-4 10 4" stroke="currentColor" strokeWidth="2" fill="none"/></svg>
           </div>
@@ -68,9 +68,9 @@ const ShippingInfo: React.FC<ShippingInfoProps> = ({ className = '' }) => {
         </div>
       </div>
       {/* Returns */}
-      <div className="p-4 bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl border border-purple-100 hover:border-purple-200 transition-all duration-300 hover:shadow-md">
+      <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-sm">
         <div className="flex items-center mb-2">
-          <div className="flex items-center justify-center w-8 h-8 bg-purple-600 rounded-lg mr-2 flex-shrink-0">
+          <div className="flex items-center justify-center w-8 h-8 bg-gray-600 rounded-md mr-2 flex-shrink-0">
             <RefreshCw className="h-4 w-4 text-white" />
           </div>
           <p className="text-sm font-semibold text-gray-900">Returns:</p>
